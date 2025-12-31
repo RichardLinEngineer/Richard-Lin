@@ -1,0 +1,43 @@
+html, body{
+    margin: 0;
+    padding: 0;
+
+}
+.top-header{
+    background-color: #070B34;
+    display: flex;
+    width: 100%;
+    flex-grow: 1;
+    border: #ff0000 5px solid;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.logo img{
+    width: auto;
+    height: 5rem;
+    flex-shrink: 0;
+}
+
+.language.selector img{
+    width: auto;
+    height: 5rem;
+    flex-shrink: 0;
+}
+
+.navbar{
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+    margin: 0;
+    padding: 0;
+    border: #ff0000 5px solid;
+    flex-grow: 1;
+}
+
+.navbar a{
+    color: #ffd33c;
+    text-decoration: none;
+    font-size: 1.3rem;
+    padding: 0.5rem 1rem;
+}

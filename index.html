@@ -6,18 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Richard Lin">
     <link rel="stylesheet" href="/Richard-Lin/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <title>Richard Lin</title>
     <style>
         .top-header{
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-        padding: 0.5em 1em;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            padding: 0.5em 1em;
+            /border: 5px solid red;
+            background-color: #070B34;
+        }
+        body{
+           background: white
         }
         .logo img{
             width: auto;
-            height: 4em;
+            height: 5em;
             flex-shrink: 0;
+            border: #ff0000 5px solid;
         }
 
         .navbar {
@@ -28,6 +35,7 @@
             gap: 4em;
             padding: 0;
             margin: 0;
+            border: #ff0000 5px solid;
         }
 
         .navbar li a {
@@ -35,6 +43,45 @@
             text-decoration: none;
             font-size: 1.2em;
             white-space: nowrap;
+            color: #ffd33c;
+            border: red 5px solid;
+        }
+
+        footer{
+            background-color: #070B34;
+            color: #ffd33c;
+        }
+
+
+        .footer-media{
+            font-size: 2em;
+            text-align: center;
+            padding: 1em 0;
+        }
+        .footer-media a{
+            color: white;
+        }
+
+        .footer-bottom{
+            text-align: center;
+        }
+
+        html, body{
+            height: 100%;
+            margin: 0;
+        }
+        body{
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        main{
+            flex: 1;
+        }
+        .social{
+            display: flex;
+            justify-content: center;
+            margin-top: 1em;
         }
     </style>
 </head>
@@ -44,7 +91,7 @@
 
             <!-- Rich Logo -->
             <div class="logo">
-                <img src="images/Rich_head.png" alt="Richard Lin Logo">
+                <img src="/Richard-Lin/images/Rich_head_transparent.png" alt="Richard Lin Logo">
             </div>
 
             <!-- Navigation Bar -->
@@ -58,7 +105,7 @@
             </nav>
             <!-- Temp Holder, Language Selector would be implemented here-->
             <div class="logo">
-                <img src="images/Rich_head.png" alt="Richard Lin Logo">
+                <img src="/Richard-Lin/images/Rich_head_transparent.png" alt="Richard Lin Logo">
             </div>
         </div>
 
@@ -94,7 +141,25 @@
             课余时间，我喜欢打羽毛球、跑步、去健身房保持活力，也爱和朋友聚会、玩游戏，还常看《名侦探柯南》和中国综艺节目。
         </p>
         -->
+        <div class="social">
+            <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="medium" data-theme="light" data-type="VERTICAL" data-vanity="richardlin05" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://www.linkedin.com/in/richardlin05?trk=profile-badge"></a></div>
+            <div class ="github-badge">
+                <a href="https://github.com/RichardLinEngineer/" target="_blank">
+                    <i class="fab fa-github" style="font-size:48px;color:black; margin-left: 20px;"></i>
+                </a>
+            </div>
+        </div>
     </main>
+    <footer>
+        <div class="footer-media">
+            <a href="https://www.linkedin.com/in/richardlin05/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/RichardLinEngineer/" target="_blank"><i class="fab fa-github"></i></a>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Richard Lin</p>
+        </div>
+    </footer>
     <script src="/Richard-Lin/js/scripts.js"></script>
+    <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
 </body>
 </html>
