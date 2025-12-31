@@ -8,141 +8,39 @@
     <link rel="stylesheet" href="/Richard-Lin/css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <title>Richard Lin</title>
-    <style>
-        .top-header{
-            display: flex;
-            justify-content: space-evenly;
-            align-items: center;
-            padding: 0.5em 1em;
-            /border: 5px solid red;
-            background-color: #070B34;
-        }
-        body{
-           background: white
-        }
-        .logo img{
-            width: auto;
-            height: 5em;
-            flex-shrink: 0;
-            border: #ff0000 5px solid;
-        }
-
-        .navbar {
-            display: flex;
-            list-style: none;
-            justify-content: space-around;
-            flex: 1;
-            /gap: 4em;
-            padding: 0;
-            margin: 0;
-            border: #ff0000 5px solid;
-        }
-
-        .navbar li a {
-            line-height: 2em;
-            text-decoration: none;
-            font-size: 1.2em;
-            white-space: nowrap;
-            color: #ffd33c;
-            border: red 5px solid;
-        }
-
-        footer{
-            background-color: #070B34;
-            color: #ffd33c;
-        }
-
-
-        .footer-media{
-            font-size: 2em;
-            text-align: center;
-            padding: 1em 0;
-        }
-        .footer-media a{
-            color: white;
-        }
-
-        .footer-bottom{
-            text-align: center;
-        }
-
-        html, body{
-            height: 100%;
-            margin: 0;
-        }
-        body{
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-        }
-        main{
-            flex: 1;
-        }
-        .social{
-            display: flex;
-            justify-content: center;
-            margin-top: 1em;
-        }
-    </style>
 </head>
 <body>
+    <div id="navbar"></div>
     <header>
-        <div class="top-header">
-
-            <!-- Rich Logo -->
-            <div class="logo">
-                <img src="/Richard-Lin/images/Rich_head_transparent.png" alt="Richard Lin Logo">
-            </div>
-
-            <!-- Navigation Bar -->
-             <nav>
-                <ul class="navbar">
-                    <li><a href="/Richard-Lin/index.html">Home</a></li>
-                    <li><a href="/Richard-Lin/pages/projects.html">Projects</a></li>
-                    <li><a href="/Richard-Lin/pages/resume.html">Resume</a></li>
-                    <li><a href="/Richard-Lin/pages/contact.html">Contact</a></li>
-                </ul>
-            </nav>
-            <!-- Temp Holder, Language Selector would be implemented here-->
-            <div class="logo">
-                <img src="/Richard-Lin/images/Rich_head_transparent.png" alt="Richard Lin Logo">
-            </div>
-        </div>
-
-        <div class="header-content">
-            <h1 style="text-align: center; font-size: 48px;">
-                Richard Lin
-            </h1>
-                    <blockquote style="text-align: center; font-size: 20px;">
-                "Water at its end forms a waterfall; humans at despair are reborn. Change your mentality, change anything"
-            </blockquote>
-            <blockquote style="text-align: center; font-size: 20px;">
-                "Life’s just thirty thousand days, a day happy, a day well lived.
-            </blockquote>
-        </div>
+        <h1 style="text-align: center; font-size: 48px;">
+            Richard Lin
+        </h1>
+        <blockquote style="text-align: center; font-size: 20px;">
+            "Water at its end forms a waterfall; humans at despair are reborn. Change your mentality, change anything"
+        </blockquote>
     </header>
     <main>
-        <div style="text-align: center;">
-            <img src="images/RichardLin.jpg" alt="Richard Lin" style="width:360px;height:240px;">
+        <div class="main-content">
+            <div class="headshot">
+                <img src="images/RichardLin.jpg" alt="Richard Lin">
+            </div>
+            <p class="bio" id="bio-en">
+                I'm Richard Lin from Huntingdon Valley, PA, an undergraduate studying Electrical and Computer Engineering at Temple University 
+                and a Temple STEPS Scholar (NSF-supported Sustainable Temple Energy and Power Scholars Program). 
+                I'm passionate about software-hardware integration, robotics, AI, and sustainable energy. 
+                In my free time, I stay active through badminton, running, and going to the gym. 
+                I also enjoy spending time with friends, playing games, watching Detective Conan and Chinese reality shows, and, 
+                of course, I never miss an opportunity to enjoy good food.
+            </p>
+            <p class="bio" id="bio-zh" style="display: none;">
+                我叫林贝贝，来自宾夕法尼亚州亨廷顿谷，目前在天普大学读电气与计算机工程本科，
+                同时也是天普STEPS学者(NSF支持的可持续能源与动力学者计划)。我对软硬件结合、机器人、人工智能和可持续能源充满热情。
+                课余时间，我喜欢打羽毛球、跑步、去健身房保持活力，也爱和朋友聚会、玩游戏，还常看《名侦探柯南》和中国综艺节目。
+            </p>
         </div>
-        <p>
-            I’m Richard Lin from Huntingdon Valley, PA, an undergraduate studying Electrical and Computer Engineering at Temple University 
-            and a Temple STEPS Scholar (NSF-supported Sustainable Temple Energy and Power Scholars Program). 
-            I’m passionate about software–hardware integration, robotics, AI, and sustainable energy. 
-            In my free time, I stay active through badminton, running, and going to the gym. 
-            I also enjoy spending time with friends, playing games, watching Detective Conan and Chinese reality shows, and, 
-            of course, I never miss an opportunity to enjoy good food.
-        </p>
-        <!--Chinese Version -->
-        <!--
-        <p>
-            我叫林贝贝，来自宾夕法尼亚州亨廷顿谷，目前在天普大学读电气与计算机工程本科，
-            同时也是天普STEPS学者（NSF支持的可持续能源与动力学者计划）。我对软硬件结合、机器人、人工智能和可持续能源充满热情。
-            课余时间，我喜欢打羽毛球、跑步、去健身房保持活力，也爱和朋友聚会、玩游戏，还常看《名侦探柯南》和中国综艺节目。
-        </p>
-        -->
+
         <div class="social">
-            <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="medium" data-theme="light" data-type="VERTICAL" data-vanity="richardlin05" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://www.linkedin.com/in/richardlin05?trk=profile-badge"></a></div>
+            <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="medium" data-theme="light" data-type="HORIZONTAL" data-vanity="richardlin05" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://www.linkedin.com/in/richardlin05?trk=profile-badge"></a></div>
             <div class ="github-badge">
                 <a href="https://github.com/RichardLinEngineer/" target="_blank">
                     <i class="fab fa-github" style="font-size:48px;color:black; margin-left: 20px;"></i>
@@ -150,15 +48,7 @@
             </div>
         </div>
     </main>
-    <footer>
-        <div class="footer-media">
-            <a href="https://www.linkedin.com/in/richardlin05/" target="_blank"><i class="fab fa-linkedin"></i></a>
-            <a href="https://github.com/RichardLinEngineer/" target="_blank"><i class="fab fa-github"></i></a>
-        </div>
-        <div class="footer-bottom">
-            <p>&copy; 2025 Richard Lin</p>
-        </div>
-    </footer>
+    <div id="footer"></div>
     <script src="/Richard-Lin/js/scripts.js"></script>
     <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
 </body>

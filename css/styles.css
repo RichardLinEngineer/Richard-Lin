@@ -1,8 +1,8 @@
 html, body{
     margin: 0;
     padding: 0;
-
 }
+
 .navbar{
     background-color: #070B34;
     display: flex;
@@ -52,3 +52,63 @@ html, body{
     cursor: pointer;
     padding: 0.5rem;
 }
+
+.main-content{
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1rem 1rem;
+    line-height: 1.5;
+}
+
+.headshot{
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+.headshot img{
+    width: 100%;
+    height: auto;
+    max-width: 360px;
+    border-radius: 10px;
+}
+
+.bio{
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+        footer{
+            background-color: #070B34;
+            color: #ffd33c;
+        }
+
+
+        .footer-media{
+            font-size: 2em;
+            text-align: center;
+            padding: 1em 0;
+        }
+        .footer-media a{
+            color: white;
+        }
+
+        .footer-bottom{
+            text-align: center;
+        }
+
+        html, body{
+            height: 100%;
+            margin: 0;
+        }
+        body{
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        main{
+            flex: 1;
+        }
+        .social{
+            display: flex;
+            justify-content: center;
+            margin-top: 1em;
+        }
