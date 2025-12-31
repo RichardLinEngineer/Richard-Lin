@@ -3,14 +3,12 @@ html, body{
     padding: 0;
 
 }
-.top-header{
+.navbar{
     background-color: #070B34;
     display: flex;
-    width: 100%;
-    flex-grow: 1;
-    border: #ff0000 5px solid;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    padding: 0 2rem;
 }
 
 .logo img{
@@ -19,25 +17,38 @@ html, body{
     flex-shrink: 0;
 }
 
-.language.selector img{
+.language-selector img{
     width: auto;
     height: 5rem;
     flex-shrink: 0;
 }
 
-.navbar{
+.nav-links{
     display: flex;
     list-style: none;
-    justify-content: space-evenly;
     margin: 0;
     padding: 0;
-    border: #ff0000 5px solid;
-    flex-grow: 1;
+    gap: 2rem;
 }
 
-.navbar a{
+.navbar li a{
     color: #ffd33c;
     text-decoration: none;
-    font-size: 1.3rem;
-    padding: 0.5rem 1rem;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+}
+
+.navbar li a:hover{
+    background-color: #ffd33c;
+    color: #070B34;
+    border-radius: 10px;
+}
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: #ffd33c;
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 0.5rem;
 }
