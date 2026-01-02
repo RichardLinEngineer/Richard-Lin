@@ -1,6 +1,13 @@
-html, body{
+*{
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 .navbar{
@@ -36,6 +43,7 @@ html, body{
     text-decoration: none;
     font-size: 1.5rem;
     padding: 0.5rem;
+    transition: all 0.3s ease;
 }
 
 .navbar li a:hover{
@@ -43,6 +51,7 @@ html, body{
     color: #070B34;
     border-radius: 10px;
 }
+
 .menu-toggle {
     display: none;
     background: none;
@@ -51,6 +60,23 @@ html, body{
     font-size: 2rem;
     cursor: pointer;
     padding: 0.5rem;
+}
+
+header h1{
+    text-align: center; 
+    font-size: 48px;
+    margin: 2rem;
+}
+
+header blockquote{
+    text-align: center; 
+    font-size: 20px;
+    margin-top: -1rem;
+    margin-bottom: 1rem;
+}
+
+main{
+    flex: 1;
 }
 
 .main-content{
@@ -76,39 +102,47 @@ html, body{
     font-size: 1.1rem;
 }
 
-        footer{
-            background-color: #070B34;
-            color: #ffd33c;
-        }
+.social{
+    display: flex;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1rem 1rem;
+    justify-content: space-evenly;
+}
 
+.github-badge a{
+    color:black;
+    font-size: 50px;
+}
 
-        .footer-media{
-            font-size: 2em;
-            text-align: center;
-            padding: 1em 0;
-        }
-        .footer-media a{
-            color: white;
-        }
+footer{
+    display: flex;
+    flex-direction: column;
+    background-color: #070B34;
+    color: white;
+}
 
-        .footer-bottom{
-            text-align: center;
-        }
+.footer-media{
+    font-size: 2em;
+    text-align: center;
+    padding: 0.5em 0;
+}
 
-        html, body{
-            height: 100%;
-            margin: 0;
-        }
-        body{
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-        }
-        main{
-            flex: 1;
-        }
-        .social{
-            display: flex;
-            justify-content: center;
-            margin-top: 1em;
-        }
+.footer-media a{
+    color: white;
+    padding: 0.25rem;
+}
+
+.copy{
+    text-align: center;
+    opacity:0.6;
+}
+
+a:focus:not(:focus-visible), button:focus:not(:focus-visible), input:focus:not(:focus-visible), select:focus:not(:focus-visible), textarea:focus:not(:focus-visible){
+    outline: none;
+}
+
+a:focus, button:focus, input:focus select:focus, textarea:focus{
+    outline: 2px solid #ffd33c;
+    outline-offset: 2px;
+}
